@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+
+<body>
+
+<h1>首页！！</h1>
+
+<form th:action="@{/testRequestBody}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    <input type="submit">
+</form>
+
+<form th:action="@{/testRequestEntity}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    <input type="submit">
+</form>
+
+<a th:href="@{/testResponseBody}">测试ResponseBody</a><br>
+
+<div id="app">
+    <a th:href="@{/testAjax}" @click="testAjax" >text for Ajax</a>
+</div>
+</body>
+<script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/axios.min.js}"></script>
+<script type="text/javascript">
+    var vue=new Vue({
+        el:"#app",
+        methods:{
+            testAjax:function (event) {
+                axios({
+                    method:"post",
+                    url:event.target.href,
+                    params:{
+                        username:"曾鸿杰",
+                        pwd:"1234567",
+                    }
+                }).then(function (response) {
+                    alert(response.data)
+                });
+                event.preventDefault();
+            }
+        }
+    })
+</script>
+</html>

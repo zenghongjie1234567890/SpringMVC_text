@@ -1,0 +1,19 @@
+Index: ../SSM/SSM_CRUD/src/main/java/com/zhj/Controller/ExanstudentController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.zhj.Controller;\r\n\r\nimport com.github.pagehelper.Page;\r\nimport com.github.pagehelper.PageHelper;\r\nimport com.github.pagehelper.PageInfo;\r\nimport com.zhj.Service.ExamstudentService;\r\nimport com.zhj.bean.Examstudent;\r\nimport org.springframework.beans.factory.annotation.Autowired;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.ui.Model;\r\nimport org.springframework.web.bind.annotation.RequestMapping;\r\nimport org.springframework.web.bind.annotation.RequestParam;\r\n\r\nimport java.util.List;\r\n\r\n/**\r\n * 主要处理员工的CRUD请求，页面跳转功能\r\n *\r\n * @author : 曾小杰\r\n * @date : 2022-02-17 14:55\r\n **/\r\n\r\n@Controller\r\npublic class ExanstudentController {\r\n\r\n    @Autowired\r\n    ExamstudentService service;\r\n\r\n    // 这不是一个分页请求\r\n    @RequestMapping(\"/list\")\r\n    // 接收一个name为pn的参数，默认值为1，表示第一页\r\n    public String getStu(Model model, @RequestParam(value = \"pn\", defaultValue = \"2\") Integer pn) {\r\n        // 进行分页，每页5条数据\r\n        PageHelper.startPage(pn, 5);\r\n        List<Examstudent> stus = service.getAll();\r\n        // 使用pageInfo包装查询后的结果,只需要把pageInfo交给页面就行了\r\n        // 封装了详细的分页信息，包括有我们查询出来的数据，传入连续显示的页数\r\n        PageInfo<Examstudent> page = new PageInfo<Examstudent>(stus, 5);\r\n        model.addAttribute(\"pageInfo\", page);\r\n        model.addAttribute(\"list\", stus);\r\n        return \"list\";\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+diff --git a/../SSM/SSM_CRUD/src/main/java/com/zhj/Controller/ExanstudentController.java b/../SSM/SSM_CRUD/src/main/java/com/zhj/Controller/ExanstudentController.java
+--- a/../SSM/SSM_CRUD/src/main/java/com/zhj/Controller/ExanstudentController.java	(revision d97c81d01732e8190c250acc46f7d76d1153b8f9)
++++ b/../SSM/SSM_CRUD/src/main/java/com/zhj/Controller/ExanstudentController.java	(date 1645240150649)
+@@ -33,7 +33,7 @@
+         // 进行分页，每页5条数据
+         PageHelper.startPage(pn, 5);
+         List<Examstudent> stus = service.getAll();
+-        // 使用pageInfo包装查询后的结果,只需要把pageInfo交给页面就行了
++        // 使用pageInfo包装查询后的结果,只需要把pageInfo交给页面就行了啦
+         // 封装了详细的分页信息，包括有我们查询出来的数据，传入连续显示的页数
+         PageInfo<Examstudent> page = new PageInfo<Examstudent>(stus, 5);
+         model.addAttribute("pageInfo", page);

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>test for Restful</title>
+</head>
+<body>
+<a th:href="@{/user}">查询所有用户信息</a><br>
+<a th:href="@{/user/1}">根据ID查询用户</a><br>
+<form th:action="@{/user}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="pwd"><br>
+    <input type="submit" value="提交该操作"><br>
+</form>
+<br>
+<form th:action="@{/user}" method="post">
+<!--    浏览器不支持直接put方式，需要用此方法转换请求-->
+    <input type="hidden" name="_method" value="put">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="pwd"><br>
+    <input type="submit" value="提交该操作"><br>
+</form>
+
+</body>
+</html>

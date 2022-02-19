@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Demo01" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo02" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo03" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo05" />
+    <file type="web" url="file://$PROJECT_DIR$/Demo06" />
+    <file type="web" url="file://$PROJECT_DIR$/../SSM/demo" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Demo01/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo02/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo03/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo05/pom.xml" />
+        <option value="$PROJECT_DIR$/Demo06/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
