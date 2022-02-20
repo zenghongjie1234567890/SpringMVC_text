@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Demo05:war exploded" />
+      <artifact name="Demo06:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c88df83c-2eaa-42c1-b181-bdaee3e27932" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo06/target/Demo06/WEB-INF/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Demo06/target/Demo06/WEB-INF/classes/springMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo06/target/classes/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Demo06/target/classes/springMVC.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +351,7 @@
       <workItem from="1645271922180" duration="63000" />
       <workItem from="1645274484681" duration="3098000" />
       <workItem from="1645281705047" duration="1638000" />
-      <workItem from="1645358152113" duration="316000" />
+      <workItem from="1645358152113" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1645245122446</created>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645245122446</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1645358553812</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645358553812</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
